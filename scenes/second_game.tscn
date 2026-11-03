@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://64vn6tptfmmj"]
+
+[ext_resource type="PackedScene" uid="uid://boigyxnchwdpr" path="res://player/player_left_right.tscn" id="1_28e65"]
+[ext_resource type="PackedScene" uid="uid://cpk5ylhieyyls" path="res://scenes/npc.tscn" id="2_2yd1v"]
+
+[node name="secondGame" type="Node2D" unique_id=1293705742]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2048115332]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1769874830]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1914893514]
+offset_top = 531.0
+offset_right = 2414.0
+offset_bottom = 646.0
+color = Color(0.36060157, 0.7249594, 0.43985897, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1523940599]
+offset_left = 27.0
+offset_top = 319.0
+offset_right = 226.0
+offset_bottom = 531.0
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=331321265]
+offset_left = 829.0
+offset_top = 446.0
+offset_right = 1028.0
+offset_bottom = 531.0
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=680598576]
+offset_left = 1388.0
+offset_top = 284.0
+offset_right = 1877.0
+offset_bottom = 528.0
+
+[node name="player left-right" parent="." unique_id=646856250 instance=ExtResource("1_28e65")]
+position = Vector2(388, 487)
+
+[node name="beggar" parent="." unique_id=1070474932 instance=ExtResource("2_2yd1v")]
+position = Vector2(761, 455)
+
+[node name="BusinessWoman" parent="." unique_id=685042367 instance=ExtResource("2_2yd1v")]
+position = Vector2(89, 456)
+
+[node name="Child" parent="." unique_id=1643986329 instance=ExtResource("2_2yd1v")]
+position = Vector2(1263, 453)
+
+[node name="Womanizer" parent="." unique_id=1774639005 instance=ExtResource("2_2yd1v")]
+position = Vector2(1635, 452)
+
+[node name="Employee" parent="." unique_id=345263555 instance=ExtResource("2_2yd1v")]
+position = Vector2(1786, 442)
+
+[node name="Student" parent="." unique_id=621905686 instance=ExtResource("2_2yd1v")]
+position = Vector2(2064, 440)

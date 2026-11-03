@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://claf2ubkr1swy"]
+
+[ext_resource type="Script" uid="uid://c31ydyejya88q" path="res://scenes/forest.gd" id="1_yj5dr"]
+
+[node name="Game1" type="Node2D" unique_id=1913849581]
+script = ExtResource("1_yj5dr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=93091266]

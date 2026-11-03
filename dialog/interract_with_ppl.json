@@ -1,0 +1,84 @@
+{
+	"Office Worker": [
+		{
+			"speaker": "Office Worker", 
+			"text": "I work every day."
+		},
+		
+		{
+			"speaker": "Office Worker", 
+			"text": "But lately..."
+		},
+		
+		{
+			"speaker": "Office Worker", 
+			"text": "I don't even know why anymore."
+		},
+		
+		{
+			"speaker": "You", 
+			"text": "[Part of his body fades into darkness.]"
+		},
+	],
+		
+		"Student": [
+		{
+			"speaker": "Student", 
+			"text": "Everyone says I have to be perfect."
+		},
+		
+		{
+			"speaker": "Student", 
+			"text": "If I'm not..."
+		},
+		
+		{
+			"speaker": "Student", 
+			"text": "then I'm worthless."
+		},
+	],
+	
+	"Womanizer": [
+		{
+			"speaker": "Womanizer", 
+			"text": "Another date, another smile, another lie."
+		},
+		
+		{
+			"speaker": "You", 
+			"text": "[No matter how many people surround him, the emptiness inside never seems to disappear.]"
+		},
+	],
+	
+	"Child": [
+		{
+			"speaker": "Child", 
+			"text": "Mom and Dad are always busy..."
+		},
+	],
+	
+	"Beggar": [
+		{
+			"speaker": "Beggar", 
+			"text": "People walk past me as if I don't exist"
+		},
+		
+		{
+			"speaker": "Beggar", 
+			"text": "Once, i had dreams and a place to belong. Now, each day is a struggle for survival"
+		},
+	],
+	
+	"Business Woman": [
+		{
+			"speaker": "Business Woman", 
+			"text": "Success was supposed to make me happy"
+		},
+		
+		{
+			"speaker": "You", 
+			"text": "[Yet behind her confident smile lies exhaustion and a growing sense of emptiness]"
+		},
+	],
+	
+}

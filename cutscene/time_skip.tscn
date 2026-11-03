@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ddj04qo81wl5m"]
+
+[node name="timeSkip" type="Control" unique_id=81231976]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1808137067]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 324.0
+offset_right = 616.0
+offset_bottom = 364.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1257637044]
+position = Vector2(576, 324)

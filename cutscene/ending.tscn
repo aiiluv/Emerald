@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dowgh7ajd7bnh"]
+
+[node name="Ending" type="Control" unique_id=2139150968]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2027189685]
+layout_mode = 0
+offset_left = 577.0
+offset_top = 325.0
+offset_right = 617.0
+offset_bottom = 365.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1438121211]
+position = Vector2(577, 325)

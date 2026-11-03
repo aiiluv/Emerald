@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://loxtvnidgrrw"]
+
+[ext_resource type="Texture2D" uid="uid://c6bfbsp6c8evb" path="res://icon.svg" id="1_8wnyp"]
+[ext_resource type="Script" uid="uid://d2030ecu4yj77" path="res://scripts/emojiHappy.gd" id="2_4iymu"]
+[ext_resource type="Script" uid="uid://c8u0wxwqs1hdw" path="res://scripts/drop_zone.gd" id="3_fws8y"]
+[ext_resource type="Script" uid="uid://1gv6rb70mhjq" path="res://scripts/emojiSad.gd" id="4_1r8tu"]
+[ext_resource type="Script" uid="uid://b2j3xq073srp0" path="res://scripts/emojiSupport.gd" id="5_p8c6n"]
+[ext_resource type="Script" uid="uid://bos5plyib2wps" path="res://scripts/emojiDisagree.gd" id="6_jlihv"]
+[ext_resource type="Script" uid="uid://1if2wt48bhfg" path="res://scripts/emojiNod.gd" id="7_w7k1n"]
+
+[node name="thirdGame" type="Control" unique_id=873410743]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1301115179]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=302725806]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=301882483]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -359.0
+offset_top = -180.0
+offset_right = 359.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="DragEmoji1" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=748013129]
+layout_mode = 2
+icon = ExtResource("1_8wnyp")
+script = ExtResource("2_4iymu")
+
+[node name="DragEmoji2" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=1004461561]
+layout_mode = 2
+icon = ExtResource("1_8wnyp")
+script = ExtResource("4_1r8tu")
+
+[node name="DragEmoji3" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=515307011]
+layout_mode = 2
+icon = ExtResource("1_8wnyp")
+script = ExtResource("5_p8c6n")
+
+[node name="DragEmoji4" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=1522795445]
+layout_mode = 2
+icon = ExtResource("1_8wnyp")
+script = ExtResource("6_jlihv")
+
+[node name="DragEmoji5" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=714185073]
+layout_mode = 2
+icon = ExtResource("1_8wnyp")
+script = ExtResource("7_w7k1n")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1463805557]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_right = 64.0
+offset_bottom = 132.0
+grow_horizontal = 2
+
+[node name="ChatBubble1" type="PanelContainer" parent="CanvasLayer/VBoxContainer" unique_id=1171073331]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/ChatBubble1" unique_id=222321334]
+layout_mode = 2
+texture = ExtResource("1_8wnyp")
+
+[node name="DropZone" type="Panel" parent="CanvasLayer/VBoxContainer" unique_id=854030289]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+script = ExtResource("3_fws8y")

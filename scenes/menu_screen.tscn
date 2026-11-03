@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://bsgxw4jhgo0yp"]
+
+[ext_resource type="Script" uid="uid://cxli8x2l18e54" path="res://scripts/menu_screen.gd" id="1_yft84"]
+[ext_resource type="Texture2D" uid="uid://cn81olqjmpebw" path="res://assets/bg/bg-grass.png" id="2_e6vgv"]
+[ext_resource type="Texture2D" uid="uid://cqt8jiw7ku3hy" path="res://assets/chara-emerald/chloe.png" id="3_73fcp"]
+[ext_resource type="Texture2D" uid="uid://ckongguda37td" path="res://assets/chara-emerald/ema.png" id="4_ar34o"]
+[ext_resource type="Texture2D" uid="uid://b83dj11ug5na3" path="res://assets/chara-emerald/ezra.png" id="5_amt2q"]
+
+[node name="MenuScreen" type="Node2D" unique_id=1895414368]
+script = ExtResource("1_yft84")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1486924448]
+follow_viewport_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1434219867]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_e6vgv")
+
+[node name="BtnPlay" type="Button" parent="CanvasLayer/TextureRect" unique_id=53105223]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 333.0
+offset_right = 397.0
+offset_bottom = 401.0
+text = "Play"
+
+[node name="BtnInfo" type="Button" parent="CanvasLayer/TextureRect" unique_id=1859739758]
+layout_mode = 0
+offset_left = 1038.0
+offset_top = 26.0
+offset_right = 1114.0
+offset_bottom = 101.0
+text = "info"
+
+[node name="Chloe" type="Button" parent="CanvasLayer/TextureRect" unique_id=945439625]
+texture_filter = 2
+layout_mode = 0
+offset_left = 529.0
+offset_top = 394.0
+offset_right = 796.0
+offset_bottom = 816.0
+rotation = -0.08309771
+icon = ExtResource("3_73fcp")
+flat = true
+
+[node name="ema" type="Button" parent="CanvasLayer/TextureRect" unique_id=419146316]
+texture_filter = 2
+layout_mode = 0
+offset_left = 754.99994
+offset_top = 397.0
+offset_right = 1021.99994
+offset_bottom = 818.99994
+rotation = -0.21619713
+icon = ExtResource("4_ar34o")
+flat = true
+
+[node name="ezra" type="Button" parent="CanvasLayer/TextureRect" unique_id=1475205599]
+texture_filter = 2
+layout_mode = 0
+offset_left = 923.99994
+offset_top = 274.99997
+offset_right = 1191.0
+offset_bottom = 697.0
+rotation = -0.46846
+icon = ExtResource("5_amt2q")
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect" unique_id=2116146819]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 162.0
+offset_right = 655.0
+offset_bottom = 343.0
+theme_override_font_sizes/font_size = 132
+text = "Emerald"
+text_overrun_behavior = 1
+
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnPlay" to="." method="_on_btn_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/BtnInfo" to="." method="_on_btn_info_pressed"]

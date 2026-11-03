@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://boigyxnchwdpr"]
+
+[ext_resource type="Script" uid="uid://802c5apc0xuw" path="res://scripts/player_left_right.gd" id="1_65gfk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4x7tl"]
+size = Vector2(72, 100)
+
+[node name="player left-right" type="CharacterBody2D" unique_id=646856250]
+script = ExtResource("1_65gfk")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1114433170]
+offset_left = -25.0
+offset_top = -51.0
+offset_right = 37.0
+offset_bottom = 43.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1077376238]
+position = Vector2(3, -7)
+shape = SubResource("RectangleShape2D_4x7tl")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=223638465]
+limit_left = -3
+limit_top = 246
+limit_right = 10000
+limit_bottom = 376

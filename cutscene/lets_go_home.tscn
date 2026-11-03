@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ew82ug37q1p3"]
+
+[node name="LetsGoHome" type="Control" unique_id=891665407]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=755124280]
+layout_mode = 0
+offset_left = 577.0
+offset_top = 324.0
+offset_right = 617.0
+offset_bottom = 364.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=318765234]
+position = Vector2(577, 324)
