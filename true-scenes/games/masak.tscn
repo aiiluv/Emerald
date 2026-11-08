@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bs1cxfrs8onfi"]
+
+[node name="Masak" type="Node2D" unique_id=2067128927]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1319562439]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=968370686]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

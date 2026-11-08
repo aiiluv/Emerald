@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://c2traunvh87wf"]
+
+[ext_resource type="Script" uid="uid://dkreh5lfj126" path="res://scripts/main_menu.gd" id="1_i3p80"]
+
+[node name="Main menu" type="Control" unique_id=1851365339]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i3p80")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=502451348]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=901480395]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btnPlay" type="Button" parent="CanvasLayer" unique_id=1992195358]
+offset_left = 102.0
+offset_top = 294.0
+offset_right = 425.0
+offset_bottom = 374.0
+text = "Play"
+
+[node name="btnLoad" type="Button" parent="CanvasLayer" unique_id=1123695564]
+offset_left = 345.0
+offset_top = 398.0
+offset_right = 668.0
+offset_bottom = 478.0
+text = "Load"
+
+[node name="btnInfo" type="Button" parent="CanvasLayer" unique_id=1054018006]
+offset_left = 610.0
+offset_top = 506.0
+offset_right = 933.0
+offset_bottom = 586.0
+text = "Info"

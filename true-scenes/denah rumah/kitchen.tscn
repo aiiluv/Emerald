@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b5xq6lbpy7pv0"]
+
+[node name="Kitchen" type="Node2D" unique_id=1236402282]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=92427789]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1326043059]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="KitchenDoor" type="Button" parent="CanvasLayer" unique_id=758377842]
+offset_left = 107.0
+offset_top = 126.0
+offset_right = 316.0
+offset_bottom = 522.0
+theme_override_font_sizes/font_size = 40
+text = "<"
