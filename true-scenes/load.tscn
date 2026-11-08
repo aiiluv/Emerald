@@ -15,3 +15,37 @@ grow_vertical = 2
 color = Color(0.16183168, 0.51816994, 0.39398885, 1)
 
 [node name="BackBtn" parent="CanvasLayer" unique_id=102423166 instance=ExtResource("1_2qd8d")]
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer" unique_id=1362268089]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -314.0
+offset_top = -196.0
+offset_right = 327.0
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 2
+
+[node name="slot1" type="Button" parent="CanvasLayer/GridContainer" unique_id=491482254]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 2
+
+[node name="slot2" type="Button" parent="CanvasLayer/GridContainer" unique_id=1215063747]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 2
+
+[node name="slot3" type="Button" parent="CanvasLayer/GridContainer" unique_id=1276352921]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 2
+
+[node name="slot4" type="Button" parent="CanvasLayer/GridContainer" unique_id=241026999]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 2
