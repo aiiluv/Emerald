@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://dar2chergruwq"]
 
 [ext_resource type="StyleBox" uid="uid://c0ljch06lytmb" path="res://styles/btn-pressed.tres" id="1_44e4h"]
+[ext_resource type="Script" uid="uid://cuveogv8gld2t" path="res://scripts/info.gd" id="1_ljmqc"]
 [ext_resource type="StyleBox" uid="uid://c1s66qtecnb84" path="res://styles/btn-normal.tres" id="1_qc40x"]
 [ext_resource type="PackedScene" uid="uid://bti6lp71x4yyu" path="res://true-scenes/btn/Back.tscn" id="3_m01yo"]
 
 [sub_resource type="Theme" id="Theme_1ktfm"]
 
 [node name="Info" type="Node2D" unique_id=1783227484]
+script = ExtResource("1_ljmqc")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1814829903]
 
@@ -27,6 +29,7 @@ theme = SubResource("Theme_1ktfm")
 color = Color(0.6189473, 0.26402962, 0.26881236, 1)
 
 [node name="ScrollStory" type="ScrollContainer" parent="CanvasLayer/rect" unique_id=1157034658]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 43.0
 offset_top = 35.0
@@ -34,22 +37,26 @@ offset_right = 533.0
 offset_bottom = 462.0
 
 [node name="LabelStory" type="Label" parent="CanvasLayer/rect/ScrollStory" unique_id=1622672299]
+unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 25
 text = "The story
 
 for meeee, for meeeee"
 
-[node name="ScrollEdit" type="ScrollContainer" parent="CanvasLayer/rect" unique_id=1143039159]
-visible = false
+[node name="ScrollCredit" type="ScrollContainer" parent="CanvasLayer/rect" unique_id=1143039159]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 43.0
 offset_top = 37.0
 offset_right = 504.0
 offset_bottom = 456.0
 
-[node name="Label" type="Label" parent="CanvasLayer/rect/ScrollEdit" unique_id=378048993]
+[node name="LabelCredit" type="Label" parent="CanvasLayer/rect/ScrollCredit" unique_id=378048993]
+unique_name_in_owner = true
 layout_mode = 2
-text = "We will stand outttttttt"
+theme_override_font_sizes/font_size = 25
+text = "Credit"
 
 [node name="BtnStory" type="Button" parent="CanvasLayer/rect" unique_id=936125281]
 layout_mode = 0
@@ -80,3 +87,6 @@ offset_left = 44.0
 offset_top = 30.0
 offset_right = 249.0
 offset_bottom = 112.0
+
+[connection signal="pressed" from="CanvasLayer/rect/BtnStory" to="." method="_on_btn_story_pressed"]
+[connection signal="pressed" from="CanvasLayer/rect/BtnCredit" to="." method="_on_btn_credit_pressed"]
