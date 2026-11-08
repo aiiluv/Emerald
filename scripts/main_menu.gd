@@ -5,7 +5,15 @@ extends Control
 func _ready() -> void:
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func _on_btn_play_pressed() -> void:
+	pass # Replace with function body.
+
+func _on_btn_load_pressed() -> void:
+	get_tree().change_scene_to_file("res://true-scenes/load.tscn")
+
+func _on_btn_info_pressed() -> void:
+	get_tree().change_scene_to_file("res://true-scenes/info.tscn")

@@ -40,3 +40,7 @@ offset_top = 506.0
 offset_right = 933.0
 offset_bottom = 586.0
 text = "Info"
+
+[connection signal="pressed" from="CanvasLayer/btnPlay" to="." method="_on_btn_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/btnLoad" to="." method="_on_btn_load_pressed"]
+[connection signal="pressed" from="CanvasLayer/btnInfo" to="." method="_on_btn_info_pressed"]

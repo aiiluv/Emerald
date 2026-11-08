@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bki1dl1buxg75"]
 
-[node name="Nyapu" type="Node2D" unique_id=860187977]
+[node name="CuciPiring" type="Node2D" unique_id=860187977]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=869536380]
 

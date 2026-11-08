@@ -1,5 +1,11 @@
 [gd_scene format=3 uid="uid://dar2chergruwq"]
 
+[ext_resource type="StyleBox" uid="uid://c0ljch06lytmb" path="res://styles/btn-pressed.tres" id="1_44e4h"]
+[ext_resource type="StyleBox" uid="uid://c1s66qtecnb84" path="res://styles/btn-normal.tres" id="1_qc40x"]
+[ext_resource type="PackedScene" uid="uid://bti6lp71x4yyu" path="res://true-scenes/btn/Back.tscn" id="3_m01yo"]
+
+[sub_resource type="Theme" id="Theme_1ktfm"]
+
 [node name="Info" type="Node2D" unique_id=1783227484]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1814829903]
@@ -10,3 +16,67 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.9046557, 0.5081572, 0.227593, 1)
+
+[node name="rect" type="ColorRect" parent="CanvasLayer" unique_id=120332796]
+offset_left = 416.0
+offset_top = 79.0
+offset_right = 976.0
+offset_bottom = 576.0
+theme = SubResource("Theme_1ktfm")
+color = Color(0.6189473, 0.26402962, 0.26881236, 1)
+
+[node name="ScrollStory" type="ScrollContainer" parent="CanvasLayer/rect" unique_id=1157034658]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 35.0
+offset_right = 533.0
+offset_bottom = 462.0
+
+[node name="LabelStory" type="Label" parent="CanvasLayer/rect/ScrollStory" unique_id=1622672299]
+layout_mode = 2
+text = "The story
+
+for meeee, for meeeee"
+
+[node name="ScrollEdit" type="ScrollContainer" parent="CanvasLayer/rect" unique_id=1143039159]
+visible = false
+layout_mode = 0
+offset_left = 43.0
+offset_top = 37.0
+offset_right = 504.0
+offset_bottom = 456.0
+
+[node name="Label" type="Label" parent="CanvasLayer/rect/ScrollEdit" unique_id=378048993]
+layout_mode = 2
+text = "We will stand outttttttt"
+
+[node name="BtnStory" type="Button" parent="CanvasLayer/rect" unique_id=936125281]
+layout_mode = 0
+offset_left = -243.0
+offset_top = 130.0
+offset_right = -30.0
+offset_bottom = 213.0
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("1_qc40x")
+theme_override_styles/pressed = ExtResource("1_44e4h")
+theme_override_styles/hover = ExtResource("1_44e4h")
+text = "Story"
+
+[node name="BtnCredit" type="Button" parent="CanvasLayer/rect" unique_id=573470875]
+layout_mode = 0
+offset_left = -243.0
+offset_top = 233.0
+offset_right = -30.0
+offset_bottom = 316.0
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("1_qc40x")
+theme_override_styles/pressed = ExtResource("1_44e4h")
+theme_override_styles/hover = ExtResource("1_44e4h")
+text = "Credit"
+
+[node name="BackBtn" parent="CanvasLayer" unique_id=102423166 instance=ExtResource("3_m01yo")]
+offset_left = 44.0
+offset_top = 30.0
+offset_right = 249.0
+offset_bottom = 112.0

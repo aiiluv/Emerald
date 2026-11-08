@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bu5evcw2ad6rd"]
 
+[ext_resource type="PackedScene" uid="uid://bti6lp71x4yyu" path="res://true-scenes/btn/Back.tscn" id="1_2qd8d"]
+
 [node name="Load" type="Node2D" unique_id=1829101299]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=140541987]
@@ -11,3 +13,5 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.16183168, 0.51816994, 0.39398885, 1)
+
+[node name="BackBtn" parent="CanvasLayer" unique_id=102423166 instance=ExtResource("1_2qd8d")]
