@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://3k2o1lyvw343"]
+
+[ext_resource type="Texture2D" uid="uid://crbrcg63wgl7v" path="res://assets/bg/tree paper fence.png" id="1_5igj0"]
+[ext_resource type="Texture2D" uid="uid://diuboptdr04s3" path="res://assets/bg/tree paper.png" id="2_8uo76"]
+
+[node name="Backyard" type="Node2D" unique_id=123643562]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1736691486]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=435170566]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=551730243]
+offset_left = 143.0
+offset_top = 9.0
+offset_right = 1165.0
+offset_bottom = 639.0
+texture = ExtResource("1_5igj0")
+
+[node name="TreePaper" type="Sprite2D" parent="CanvasLayer" unique_id=52332071]
+position = Vector2(242, 314)
+scale = Vector2(0.8708708, 0.84776914)
+texture = ExtResource("2_8uo76")

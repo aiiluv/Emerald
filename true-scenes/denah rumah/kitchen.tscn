@@ -1,20 +1,39 @@
 [gd_scene format=3 uid="uid://b5xq6lbpy7pv0"]
 
+[ext_resource type="Texture2D" uid="uid://br6c04u1fgvu8" path="res://assets/bg/kitchen paper.png" id="1_kklgj"]
+[ext_resource type="Texture2D" uid="uid://cru0d8v46kdhq" path="res://assets/bg/door paper.png" id="2_u0kwy"]
+
 [node name="Kitchen" type="Node2D" unique_id=1236402282]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=92427789]
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1326043059]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1161470312]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="KitchenDoor" type="Button" parent="CanvasLayer" unique_id=758377842]
-offset_left = 107.0
-offset_top = 126.0
-offset_right = 316.0
-offset_bottom = 522.0
+[node name="TextureRect" type="Button" parent="CanvasLayer" unique_id=1284509954]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 23.0
+offset_top = 82.0
+offset_right = -183.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9, 0.9)
+icon = ExtResource("1_kklgj")
+flat = true
+
+[node name="KitchenDoor" type="Button" parent="CanvasLayer" unique_id=1595746509]
+offset_left = 854.0
+offset_top = 124.0
+offset_right = 1234.0
+offset_bottom = 701.0
+scale = Vector2(0.7, 0.7)
 theme_override_font_sizes/font_size = 40
-text = "<"
+icon = ExtResource("2_u0kwy")
+flat = true

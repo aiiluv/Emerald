@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://c2traunvh87wf"]
 
 [ext_resource type="Script" uid="uid://dkreh5lfj126" path="res://scripts/main_menu.gd" id="1_i3p80"]
+[ext_resource type="Texture2D" uid="uid://d0svcx25whow6" path="res://assets/bg/paper Bg.png" id="2_52d7w"]
+[ext_resource type="Texture2D" uid="uid://dw44meac5dyfr" path="res://assets/bg/house paper.png" id="3_lr3y0"]
+[ext_resource type="Texture2D" uid="uid://diuboptdr04s3" path="res://assets/bg/tree paper.png" id="4_qlvl6"]
+[ext_resource type="Texture2D" uid="uid://dnltraq3xdhxp" path="res://assets/btn/Emerald.png" id="5_dmg8d"]
 
 [node name="Main menu" type="Control" unique_id=1851365339]
 layout_mode = 3
@@ -19,28 +23,38 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="btnPlay" type="Button" parent="CanvasLayer" unique_id=1992195358]
-offset_left = 102.0
-offset_top = 294.0
-offset_right = 425.0
-offset_bottom = 374.0
-text = "Play"
+texture = ExtResource("2_52d7w")
 
 [node name="btnLoad" type="Button" parent="CanvasLayer" unique_id=1123695564]
-offset_left = 345.0
-offset_top = 398.0
-offset_right = 668.0
-offset_bottom = 478.0
-text = "Load"
+offset_left = 268.0
+offset_top = 81.0
+offset_right = 1274.0
+offset_bottom = 725.0
+icon = ExtResource("3_lr3y0")
+flat = true
 
 [node name="btnInfo" type="Button" parent="CanvasLayer" unique_id=1054018006]
-offset_left = 610.0
-offset_top = 506.0
-offset_right = 933.0
-offset_bottom = 586.0
-text = "Info"
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -103.0
+offset_top = -375.0
+offset_right = 606.0
+offset_bottom = 395.0
+grow_vertical = 2
+scale = Vector2(0.9, 0.9)
+icon = ExtResource("4_qlvl6")
+flat = true
 
-[connection signal="pressed" from="CanvasLayer/btnPlay" to="." method="_on_btn_play_pressed"]
+[node name="btnPlay" type="Button" parent="CanvasLayer" unique_id=1992195358]
+offset_left = 88.0
+offset_top = 105.0
+offset_right = 702.0
+offset_bottom = 391.0
+scale = Vector2(0.8, 0.8)
+icon = ExtResource("5_dmg8d")
+flat = true
+
 [connection signal="pressed" from="CanvasLayer/btnLoad" to="." method="_on_btn_load_pressed"]
 [connection signal="pressed" from="CanvasLayer/btnInfo" to="." method="_on_btn_info_pressed"]
+[connection signal="pressed" from="CanvasLayer/btnPlay" to="." method="_on_btn_play_pressed"]

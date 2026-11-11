@@ -3,6 +3,7 @@
 [ext_resource type="StyleBox" uid="uid://c0ljch06lytmb" path="res://styles/btn-pressed.tres" id="1_44e4h"]
 [ext_resource type="Script" uid="uid://cuveogv8gld2t" path="res://scripts/info.gd" id="1_ljmqc"]
 [ext_resource type="StyleBox" uid="uid://c1s66qtecnb84" path="res://styles/btn-normal.tres" id="1_qc40x"]
+[ext_resource type="Texture2D" uid="uid://d0svcx25whow6" path="res://assets/bg/paper Bg.png" id="2_44lp8"]
 [ext_resource type="PackedScene" uid="uid://bti6lp71x4yyu" path="res://true-scenes/btn/Back.tscn" id="3_m01yo"]
 
 [sub_resource type="Theme" id="Theme_1ktfm"]
@@ -12,13 +13,13 @@ script = ExtResource("1_ljmqc")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1814829903]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1818175130]
+[node name="ColorRect" type="TextureRect" parent="CanvasLayer" unique_id=1664755620]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.9046557, 0.5081572, 0.227593, 1)
+texture = ExtResource("2_44lp8")
 
 [node name="rect" type="ColorRect" parent="CanvasLayer" unique_id=120332796]
 offset_left = 416.0
