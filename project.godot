@@ -21,7 +21,15 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"father": "res://charas/father.dch",
+"majikan - father": "res://charas/majikan - father.dch",
+"majikan - kid": "res://charas/majikan - kid.dch",
+"majikan - mother": "res://charas/majikan - mother.dch",
+"mother": "res://charas/mother.dch",
+"prita": "res://charas/prita.dch",
+"prita lil bro": "res://charas/prita lil bro.dch"
+}
 directories/dtl_directory={}
 layout/style_directory={}
 
