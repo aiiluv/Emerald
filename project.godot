@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+GameManager="*uid://dnqkxfpmxc8dt"
 
 [dialogic]
 
@@ -35,6 +36,8 @@ directories/dtl_directory={
 "timeline1": "res://timelines/timeline1.dtl",
 "timeline10": "res://timelines/timeline10.dtl",
 "timeline11": "res://timelines/timeline11.dtl",
+"timeline12": "res://timelines/timeline12.dtl",
+"timeline13": "res://timelines/timeline13.dtl",
 "timeline2": "res://timelines/timeline2.dtl",
 "timeline3": "res://timelines/timeline3.dtl",
 "timeline4": "res://timelines/timeline4.dtl",
