@@ -28,9 +28,22 @@ directories/dch_directory={
 "majikan - mother": "res://charas/majikan - mother.dch",
 "mother": "res://charas/mother.dch",
 "prita": "res://charas/prita.dch",
-"prita lil bro": "res://charas/prita lil bro.dch"
+"prita lil bro": "res://charas/prita lil bro.dch",
+"relawan": "res://charas/relawan.dch"
 }
-directories/dtl_directory={}
+directories/dtl_directory={
+"timeline1": "res://timelines/timeline1.dtl",
+"timeline10": "res://timelines/timeline10.dtl",
+"timeline11": "res://timelines/timeline11.dtl",
+"timeline2": "res://timelines/timeline2.dtl",
+"timeline3": "res://timelines/timeline3.dtl",
+"timeline4": "res://timelines/timeline4.dtl",
+"timeline5": "res://timelines/timeline5.dtl",
+"timeline6": "res://timelines/timeline6.dtl",
+"timeline7": "res://timelines/timeline7.dtl",
+"timeline8": "res://timelines/timeline8.dtl",
+"timeline9": "res://timelines/timeline9.dtl"
+}
 layout/style_directory={}
 
 [display]

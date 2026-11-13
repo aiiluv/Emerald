@@ -1,0 +1,11 @@
+audio music "res://assets/sounds/story2.mp3"
+[background fade="0.0"]
+Saat tiba di depan rumah, kamu melihat seorang pria sedang berbicara dengan kedua orang tuamu.
+Saya sudah memberikan kalian cukup waktu. Mana uangnya?
+father: Tolong beri kami waktu satu minggu lagi. Saya sedang berusaha mencari uangnya.
+Minggu lalu Anda juga bilang begitu.
+mother: Kami benar-benar sedang berusaha. Tolong mengerti keadaan kami.
+Saya tidak bisa terus menunggu. Jangan lupa, kalian juga masih punya tunggakan utang.
+father: Saya akan membayarnya. Saya janji.
+Pria itu akhirnya pergi meninggalkan rumah.
+jump timeline3/

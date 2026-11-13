@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://on341ost5cyv"]
+
+[ext_resource type="Texture2D" uid="uid://d0svcx25whow6" path="res://assets/bg/paper Bg.png" id="1_w65tk"]
+
+[node name="ProgressBar" type="Control" unique_id=491366995]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Texture" type="TextureRect" parent="." unique_id=969566628]
+layout_mode = 0
+offset_right = 1248.0
+offset_bottom = 757.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_w65tk")
+flip_v = true
+
+[node name="Label" type="Label" parent="Texture" unique_id=795022238]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 53.0
+offset_right = 262.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0.06053035, 0.06053035, 0.060530342, 1)
+theme_override_font_sizes/font_size = 60
+text = "List Tugas"
